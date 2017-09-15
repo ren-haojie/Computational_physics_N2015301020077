@@ -1,2 +1,2 @@
 # homework list
-##exersice 1
+## exersice 1
