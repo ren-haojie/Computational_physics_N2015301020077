@@ -1,6 +1,6 @@
     import turtle
     turtle.color("red")
-    turtle.speed(5)
+    turtle.speed(4)
     turtle.goto(0,0)
     for i in range(5):
         turtle.forward(100)
