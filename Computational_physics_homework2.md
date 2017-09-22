@@ -1,5 +1,5 @@
-    import turtle
-    turtle.color("red")
+    import turtle
+    turtle.color("red")
     turtle.speed(4)
     turtle.goto(0,0)
     for i in range(5):
