@@ -20,4 +20,6 @@ plt.xlabel('t')
 plt.ylabel('x')
 plt.ylim(0,200)
 plt.show()
+```
+result(https://github.com/ren-haojie/Computational_physics_N2015301020077/blob/master/python.png)
 
