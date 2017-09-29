@@ -27,6 +27,7 @@ plt.ylabel('x')
 plt.ylim(0,200)
 plt.show()
 ```
-这是代码运行后的图像
+代码运行后的图像
 [result](https://github.com/ren-haojie/Computational_physics_N2015301020077/blob/master/python.png)
+结果与结论：对于一次函数用欧拉法近似对于结果没有影响，与结果一致
 
