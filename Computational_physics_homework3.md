@@ -1,4 +1,9 @@
+#1.2
+the position of an object moving horizontallly with a constant velocity,v,.is described by the equation dx/dt=v. Assuming that the velocity is a constant,say v=40m/s,use the Euler method to solve for x as a function of time.Compare your result with the exact solution.
 
+由dx/dt=v可解出x=v*t+a(a为常数）
+用欧拉法解
+x(t+dt)=x(t)+v*dt
 ```
 import matplotlib.pyplot as plt
 x=[]
@@ -7,7 +12,7 @@ v=40
 dt=0.01
 endtime=5
 x.append(10)
-t.append(0)
+t.append(0) of time
 for i in range(int(endtime/dt)):
 	x.append(x[i]+v*dt)
 	t.append(t[i]+dt)
