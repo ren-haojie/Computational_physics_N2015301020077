@@ -1,5 +1,6 @@
 
-```import matplotlib.pyplot as plt
+```
+import matplotlib.pyplot as plt
 x=[]
 t=[]
 v=40
