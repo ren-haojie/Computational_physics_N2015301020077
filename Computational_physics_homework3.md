@@ -21,7 +21,7 @@ for i in range(int(endtime/dt)):
     
 plt.figure(figsize=(10,5))
 plt.plot(t,x,color="blue",linewidth=2)
-plt.title('x=vt')
+plt.title('x=40t+10')
 plt.xlabel('t')
 plt.ylabel('x')
 plt.ylim(0,200)
