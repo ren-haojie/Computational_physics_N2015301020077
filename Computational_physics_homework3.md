@@ -28,6 +28,6 @@ plt.ylim(0,200)
 plt.show()
 ```
 代码运行后的图像
-[result](https://github.com/ren-haojie/Computational_physics_N2015301020077/blob/master/python.png)
+[result](https://github.com/ren-haojie/Computational_physics_N2015301020077/commit/2d2ebb64489ba76c1fdfdaebaf2950e940da2220)
 结果与结论：对于一次函数用欧拉法近似对于结果没有影响，与结果一致
 
