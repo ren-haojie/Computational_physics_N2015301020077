@@ -7,27 +7,37 @@ x(t+dt)=x(t)+v*dt
 代码如下
 ```
 import matplotlib.pyplot as plt
+import numpy as np
 x=[]
 t=[]
+x_thory=[]
+t_thory=[]
 v=40
 dt=0.01
 endtime=5
 x.append(10)
-t.append(0) of time
+t.append(0)
+t_thory=np.linspace(0,5,100)
+x_thory=v*t_thory+10
 for i in range(int(endtime/dt)):
 	x.append(x[i]+v*dt)
 	t.append(t[i]+dt)
 	print(t[-1] ,x[-1])
     
-plt.figure(figsize=(10,5))
-plt.plot(t,x,color="blue",linewidth=2)
-plt.title('x=40t+10')
+plt.plot(t,x)
 plt.xlabel('t')
 plt.ylabel('x')
-plt.ylim(0,200)
+plt.title('x=40t+10')
+
+plt.plot(t_thory,x_thory)
+plt.xlabel('t_thory')
+plt.ylabel('x_thory')
+
+
 plt.show()
+
 ```
-代码运行后的图像
+代码运行后的图像可以看出两条函数图像重合
 [result](https://github.com/ren-haojie/Computational_physics_N2015301020077/commit/2d2ebb64489ba76c1fdfdaebaf2950e940da2220)
 结果与结论：对于一次函数用欧拉法近似对于结果没有影响，与结果一致
 
