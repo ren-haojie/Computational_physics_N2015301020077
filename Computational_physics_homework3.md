@@ -38,6 +38,6 @@ plt.show()
 
 ```
 代码运行后的图像可以看出两条函数图像重合
-[result](https://github.com/ren-haojie/Computational_physics_N2015301020077/commit/2d2ebb64489ba76c1fdfdaebaf2950e940da2220)
+[result](https://github.com/ren-haojie/Computational_physics_N2015301020077/commit/57d7a40be918da4f82456dbbc4a883ad25b453f0)
 结果与结论：对于一次函数用欧拉法近似对于结果没有影响，与结果一致
 
