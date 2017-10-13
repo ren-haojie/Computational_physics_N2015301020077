@@ -1,26 +1,26 @@
-import math
-import matplotlib.pyplot as plt
-t=[]
-dt=0.01
-M=1.0
-g=9.8
-end_time=200
-y_h=0.0001
-B_2=0.00004
-a=30/180*math.pi
-b=45/180*math.pi
-c=60/180*math.pi
-theta=[a,b,c] 
-t.append(0)
-x_1=[]
-v_x_1=[]
-y_1=[]
-v_y_1=[]
-x_1.append(0)
-y_1.append(0)
-v_x_1.append(600*math.cos(theta[0]))
-v_y_1.append(600*math.sin(theta[0]))
-for i in range(int(end_time/dt)):
+    import math
+    import matplotlib.pyplot as plt
+    t=[]
+    dt=0.01
+    M=1.0
+    g=9.8
+    end_time=200
+    y_h=0.0001
+    B_2=0.00004
+    a=30/180*math.pi
+    b=45/180*math.pi
+    c=60/180*math.pi
+    theta=[a,b,c] 
+    t.append(0)
+    x_1=[]
+    v_x_1=[]
+    y_1=[]
+    v_y_1=[]
+    x_1.append(0)
+    y_1.append(0)
+    v_x_1.append(600*math.cos(theta[0]))
+    v_y_1.append(600*math.sin(theta[0]))
+    for i in range(int(end_time/dt)):
     m=x_1[i]+v_x_1[i]*dt
     x_1.append(m)
     n=v_x_1[i]-(B_2*math.e**(-y_1[i]*y_h))*((v_x_1[i]**2+v_y_1[i]**2)**0.5)*v_x_1[i]*M*dt
@@ -29,15 +29,15 @@ for i in range(int(end_time/dt)):
     y_1.append(o)
     p=v_y_1[i]-g*dt-(B_2*math.e**(-y_1[i]*y_h))*((v_x_1[i]**2+v_y_1[i]**2)**0.5)*v_y_1[i]*M*dt
     v_y_1.append(p)
-x_2=[]
-v_x_2=[]
-y_2=[]
-v_y_2=[]
-x_2.append(0)
-y_2.append(0)
-v_x_2.append(600.0*math.cos(theta[1]))
-v_y_2.append(600.0*math.sin(theta[1]))
-for i in range(int(end_time/dt)):
+    x_2=[]
+    v_x_2=[]
+    y_2=[]
+    v_y_2=[]
+    x_2.append(0)
+    y_2.append(0)
+    v_x_2.append(600.0*math.cos(theta[1]))
+    v_y_2.append(600.0*math.sin(theta[1]))
+    for i in range(int(end_time/dt)):
     m=x_2[i]+v_x_2[i]*dt
     x_2.append(m)
     n=v_x_2[i]-(B_2*math.e**(-y_2[i]*y_h))*((v_x_2[i]**2+v_y_2[i]**2)**0.5)*v_x_2[i]*M*dt
@@ -46,15 +46,15 @@ for i in range(int(end_time/dt)):
     y_2.append(o)
     p=v_y_2[i]-g*dt-(B_2*math.e**(-y_2[i]*y_h))*((v_x_2[i]**2+v_y_2[i]**2)**0.5)*v_y_2[i]*M*dt
     v_y_2.append(p)
-x_3=[]
-v_x_3=[]
-y_3=[]
-v_y_3=[]
-x_3.append(0)
-y_3.append(0)
-v_x_3.append(600.0*math.cos(theta[2]))  
-v_y_3.append(600.0*math.sin(theta[2]))
-for i in range(int(end_time/dt)):
+    x_3=[]
+    v_x_3=[]
+    y_3=[]
+    v_y_3=[]
+    x_3.append(0)
+    y_3.append(0)
+    v_x_3.append(600.0*math.cos(theta[2]))  
+    v_y_3.append(600.0*math.sin(theta[2]))
+    for i in range(int(end_time/dt)):
     m=x_3[i]+v_x_3[i]*dt
     x_3.append(m)
     n=v_x_3[i]-(B_2*math.e**(-y_3[i]*y_h))*((v_x_3[i]**2+v_y_3[i]**2)**0.5)*v_x_3[i]*M*dt
@@ -63,14 +63,14 @@ for i in range(int(end_time/dt)):
     y_3.append(o)
     p=v_y_3[i]-g*dt-(B_2*math.e**(-y_3[i]*y_h))*((v_x_3[i]**2+v_y_3[i]**2)**0.5)*v_y_3[i]*M*dt
     v_y_3.append(p)
-plt.figure(figsize=(10,8))    
-plt.plot(x_1,y_1,label="$30^\circ$",color='r')
-plt.plot(x_2,y_2,label="$45^\circ$",color='b')
-plt.plot(x_3,y_3,label="$60^\circ$",color='y')
-plt.ylim(0,10000)
-plt.xlim(0,23000)
-plt.ylabel('y(m)')
-plt.xlabel('x(m)')
-plt.legend()
-plt.title('the trial of the cannonball,have drag')
-plt.show
+    plt.figure(figsize=(10,8))    
+    plt.plot(x_1,y_1,label="$30^\circ$",color='r')
+    plt.plot(x_2,y_2,label="$45^\circ$",color='b')
+    plt.plot(x_3,y_3,label="$60^\circ$",color='y')
+    plt.ylim(0,10000)
+    plt.xlim(0,23000)
+    plt.ylabel('y(m)')
+    plt.xlabel('x(m)')
+    plt.legend()
+    plt.title('the trial of the cannonball,have drag')
+    plt.show
