@@ -22,7 +22,7 @@
 	m=x_1[i]+v_x_1[i]*dt
 	x_1.append(m)
 	n=v_x_1[i]
-	v_x_1.append(n)
+ 	v_x_1.append(n)
 	o=y_1[i]+v_y_1[i]*dt
 	y_1.append(o)
 	p=v_y_1[i]-g*dt
@@ -75,6 +75,6 @@
 	plt.xlabel('x(m)')
 	plt.ylabel('y(m)')
 	plt.ylim(0,15000)
-plt.xlim(0,40000)
-plt.legend()
-plt.show()
+	plt.xlim(0,40000)
+ 	plt.legend()
+	plt.show()
