@@ -28,15 +28,15 @@ dy=(1.-(-1.))/(10.)
 
 def template():
     v_init=np.zeros((100,100))
-    v_init[40:60,40]=-1
-    v_init[40:60,60]=1
+    v_init[40:60,40]=1
+    v_init[40:60,60]=-1
     return v_init
 # v_nit v0 means initial potential,v1 means next potential,vt means temporary potential  
 dv=np.zeros((7,7))+1.
 
 def tem2(v_2):
-    v_2[40:60,40]=-1
-    v_2[40:60,60]=1
+    v_2[40:60,40]=1
+    v_2[40:60,60]=-1
     return v_2
 
 def condition(dv):
