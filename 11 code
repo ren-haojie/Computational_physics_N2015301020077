@@ -46,5 +46,5 @@ def animate(i):
 def init():
     line.set_data([],[])
     return line,
-anim=animation.FuncAnimation(f,animate,init_func=init,frames=200,interval=50,blit=True)#frames mean zhenshu,interval mean each frame last how long
+anim=animation.FuncAnimation(f,animate,init_func=init,frames=200,interval=50,blit=True)
 show()
